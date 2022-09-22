@@ -1,0 +1,231 @@
+body {
+    background-color: rgb(40, 40, 35);  
+}
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    
+    list-style: none;
+    margin: 0; 
+    background: rgb(68, 67, 63);
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: white;
+  }
+  
+  .navigation a:hover {
+    background: #999891;
+  }
+  
+  @media all and (max-width: 800px) {
+    .navigation {
+      justify-content: space-around;
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+    .navigation {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+    .navigation a { 
+      text-align: center; 
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255,0.3); 
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+    }
+    .navigation li:last-of-type a {
+      border-bottom: none;
+    }
+  }
+
+
+#eka img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    opacity: 0.3;
+}
+
+#eka h1 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 70px;
+    position: absolute;
+    left: 200px;
+    top: 150px;
+}
+
+#eka p {
+    font-size: 30px;
+}
+
+#slogan h2 {
+  text-align: center;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+  position: absolute;
+  left: 670px;
+  top: 400px;
+  color: gray;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+ 
+
+}
+.flex-container > div {
+  background-color: #fcf8f1;
+  margin: 10px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+
+#toka h1 {
+  font-size: 40px;
+  font-style: italic; stroke-linecap:square; 
+  top: 50px;
+  left: 850px;
+  position: absolute;
+  color: whitesmoke;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 500px;
+  height: 300px;
+  perspective: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform .98s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-face, .flip-card-behind {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-face {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-behind {
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.la {
+  background-image: linear-gradient(to right top, #58564e, #2e2c26, #606056, #908d89, #a5a38d);
+}
+
+.hawai {
+  background-image: linear-gradient(to right bottom,#58564e, #2e2c26, #606056, #908d89, #a5a38d);
+}
+
+#kolmas img {
+    
+        background-image: url("_8160192\ \(1\).JPG"); max-width: 100%; 
+        display: block;
+        opacity: 0.5;
+      
+}
+
+#kolmas h1 {
+    text-align: center;
+    font-size: 60px;
+    position: absolute;
+    left: 600px;
+    top: 150px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+/* tässä alkaa 3.sivun yhteydenottolomake */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px;
+  margin-bottom: 16px; 
+  resize: vertical
+}
+
+/* submit nappi*/
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+  background-color: #1e5120;
+}
+
+.containerm {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+footer {
+    text-align: center;
+    background-color: rgb(174, 173, 156);
+    color: rgb(39, 46, 46);
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(37, 46, 46);
+}
+
+  #vasen p {
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif
+  }
+
+  #oikea p {
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif
+  }
+
+
